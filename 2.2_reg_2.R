@@ -1,7 +1,7 @@
-# £ukasz Szymczyk
+# ≈Åukasz Szymczyk
 # 2019-12-06
 # encoding: UTF-8
-# 2.2 regresion 2 (eqXY) ==========================================================================
+# 2.2 regresion 2 (eq11) ==========================================================================
 
 
 # libraries
@@ -404,12 +404,5 @@ cbind(group = results1$group,
       ARAC = round(results1$ARAC,4)
       )
 
-
-
-
-
-
-
-
-
-
+fwrite(results1,'data//output//res_ARMF_eq11.csv',sep = ';')
+fwrite(results2,'data//output//res_TOC_eq11.csv',sep = ';')
