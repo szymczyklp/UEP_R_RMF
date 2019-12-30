@@ -1,4 +1,4 @@
-# £ukasz Szymczyk
+# ≈Åukasz Szymczyk
 # 2019-12-06
 # encoding: UTF-8
 # 2.1 regresion 1 (eq10) ==========================================================================
@@ -40,7 +40,6 @@ tests1 <- tibble(
   Hausman = 0, Ftime = 0, LM = 0, BGW = 0
 )
 
-row.names(config1) <- '0.0'
 row.names(results1) <- '0.0.0'
 row.names(pval1) <- '0.0.0'
 row.names(tests1) <- '0.0'
@@ -64,7 +63,6 @@ tests2 <- tibble(
   Hausman = 0, Ftime = 0, LM = 0, BGW = 0
 )
 
-row.names(config2) <- '0.0'
 row.names(results2) <- '0.0.0'
 row.names(pval2) <- '0.0.0'
 row.names(tests2) <- '0.0'
@@ -233,4 +231,5 @@ round(results2$rsq,4)
 
 pval2$PER < 0.01
 
-
+fwrite(results1,'data//output//res_ARMF_eq10.csv',sep = ';')
+fwrite(results2,'data//output//res_TOC_eq10.csv',sep = ';')
